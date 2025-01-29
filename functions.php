@@ -22,4 +22,15 @@ function my_custom_home_top_sellers() {
     }
 }
 add_action('woocommerce_after_main_content', 'my_custom_home_top_sellers');
+
+function my_custom_promo_bar() {
+    if (is_front_page()) {
+        echo '<div class="promo-bar" style="background: #ff5733; color: white; text-align: center; padding: 10px; font-size: 16px;">
+                🚀 Special offer! Get 20% off your first purchase with the code <strong>WELCOME20</strong>.
+              </div>';
+    }
+}
+
+add_action('wp_head', 'my_custom_promo_bar');
+
 ?>
