@@ -6,4 +6,3 @@ dynamic_product_message();
 
 wp_footer();
 ?>
-
